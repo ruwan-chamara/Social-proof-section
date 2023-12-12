@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700;800&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600;700&family=Outfit:wght@300;400;600&family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap");
+* {
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.social-proof-card {
+  width: 1000px;
+  height: 530px;
+  background-color: rgb(252, 250, 250);
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  padding: 38px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -500px;
+  margin-top: -265px;
+}
+main {
+  height: 180px;
+  display: flex;
+  gap: 20px;
+  color: hsl(300, 43%, 22%);
+}
+
+.top-left {
+  width: 50%;
+}
+h1 {
+  font-size: 38px;
+  width: 300px;
+}
+.top-left p {
+  width: 350px;
+  margin-top: 20px;
+  line-height: 1.2;
+}
+
+.top-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+.review {
+  width: 80%;
+  height: 38px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding-left: 20px;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 6px;
+}
+.review img {
+  width: 15px;
+  height: 15px;
+}
+.review p {
+  margin-left: 15px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+.two,
+.middle {
+  align-self: center;
+}
+.three,
+.right {
+  align-self: flex-end;
+}
+
+footer {
+  display: flex;
+  gap: 20px;
+  height: 220px;
+}
+.bottom {
+  background-color: hsl(300, 43%, 22%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 20px;
+  border-radius: 8px;
+  height: 190px;
+}
+.bottom-up {
+  display: flex;
+  gap: 15px;
+}
+.bottom-up-image img {
+  width: 30px;
+  border-radius: 15px;
+}
+.bottom-down p {
+  line-height: 1.2;
+}
+.bottom-up-paragraph {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  gap: 5px;
+}
+.veryfied {
+  color: hsl(333, 80%, 67%);
+}
+
+/*-----------mobile view-------------*/
+@media only screen and (max-width: 900px) {
+  .social-proof-card {
+    width: 350px;
+    padding: 35px;
+    margin-left: -175px;
+    height: 1160px;
+    margin-top: -350px;
+  }
+  main {
+    height: 440px;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .top-left,
+  .top-left p,
+  .top-right,
+  .review,
+  h1 {
+    width: 100%;
+  }
+  .top-left p {
+    margin-top: 20px;
+    line-height: 1.2;
+  }
+  .top-right {
+    gap: 15px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 15px;
+    height: 100vh;
+  }
+  .review,
+  .review p {
+    margin-left: 0px;
+    margin-top: 8px;
+  }
+  .review {
+    height: 60px;
+    display: block;
+    padding-left: 0px;
+    padding-top: 8px;
+  }
+  h1 {
+    font-size: 38px;
+  }
+}
